@@ -5,8 +5,11 @@ const APP_NAME = 'vite-react-tailwind-starter';
 const Meta = () => {
   return (
     <Helmet>
-      <title>Vite React Tailwind Starter</title>
-      <meta name="description" content="Vite React Tailwind Starter Template" />
+      <title>Shuckster&apos;s Dictionary</title>
+      <meta
+        name="description"
+        content="Doug's and Doug's complete vocabulary"
+      />
 
       <meta name="application-name" content={APP_NAME} />
       <meta name="apple-mobile-web-app-capable" content="yes" />
