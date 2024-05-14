@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+import { Badge } from '@/lib/components/ui/badge';
+
 const Dictionary = () => {
   const [entries, setEntries] = useState<string[][]>([]);
 
@@ -26,23 +28,25 @@ const Dictionary = () => {
       {entries.map((entry) => (
         <div
           key={entry[0]}
-          className="rounded-md·border·border-gray-300·p-4 mb-4"
+          className="rounded-md·border·border-gray-300·p-4 mb-4 border-b pb-4"
         >
           <div>
             <span className="pr-4 text-xl font-bold">{entry[0]}</span>
-            <span>{entry[1]} </span>
-            {entry[2]}
+            <span className="pr-4 text-sm italic">{entry[1]} </span>
+            <Badge className="text-sm" variant="outline">
+              {entry[2]}
+            </Badge>
           </div>
-          <div className="mt-2">
+          <div className="mt-2 pl-2">
             <span className="font-bold">Point of Origin: </span> {entry[3]}
           </div>
-          <div className="mt-2">
+          <div className="mt-2 pl-2">
             <span className="font-bold">Definition:</span> <br />
-            {entry[4]}
+            <div className="pl-2">{entry[4]}</div>
           </div>
-          <div className="mt-2">
+          <div className="mt-2 pl-2">
             <span className="font-bold">Example:</span> <br />
-            {entry[5]}
+            <div className="pl-2">{entry[5]}</div>
           </div>
         </div>
       ))}
