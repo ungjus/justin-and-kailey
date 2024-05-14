@@ -1,11 +1,9 @@
-import CTASection from './components/CTASection';
-import SomeText from './components/SomeText';
+import Dictionary from './components/Dictionary';
 
 const Home = () => {
   return (
-    <div className="flex min-h-[60vh] flex-col items-center justify-center gap-8 text-center">
-      <SomeText />
-      <CTASection />
+    <div className="flex min-h-[60vh] flex-col items-center justify-center gap-8">
+      <Dictionary />
     </div>
   );
 };
