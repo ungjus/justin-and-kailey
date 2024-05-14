@@ -1,34 +1,16 @@
-import { useEffect, useState } from 'react';
-
 import { Badge } from '@/lib/components/ui/badge';
 
-const Dictionary = () => {
-  const [entries, setEntries] = useState<string[][]>([]);
+interface WordDisplayProps {
+  entries: string[][];
+}
 
-  useEffect(() => {
-    // Function to read the text file
-    const readTextFile = async () => {
-      try {
-        const response = await fetch('/dictionary.txt');
-        const text = await response.text();
-        const lines = text
-          .split('\n')
-          .map((line) => line.split('|').map((entry) => entry.trim()));
-        setEntries(lines);
-      } catch (error) {
-        console.error('Error reading the file:', error);
-      }
-    };
-
-    readTextFile();
-  }, []);
-
+const WordDisplay = ({ entries }: WordDisplayProps) => {
   return (
-    <div>
+    <div className="w-100">
       {entries.map((entry) => (
         <div
           key={entry[0]}
-          className="mb-4 rounded-lg border border-gray-300 bg-white p-4 pb-4 text-black shadow-sm dark:bg-slate-300"
+          className="mb-4 rounded-lg border border-gray-300 bg-white p-4 pb-4 text-black shadow-sm dark:bg-slate-50"
         >
           <div>
             <span className="pr-4 text-xl font-bold">{entry[0]}</span>
@@ -57,4 +39,4 @@ const Dictionary = () => {
   );
 };
 
-export default Dictionary;
+export default WordDisplay;
