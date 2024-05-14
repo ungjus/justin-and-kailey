@@ -28,12 +28,15 @@ const Dictionary = () => {
       {entries.map((entry) => (
         <div
           key={entry[0]}
-          className="rounded-md·border·border-gray-300·p-4 mb-4 border-b pb-4"
+          className="mb-4 rounded-lg border border-gray-300 bg-white p-4 pb-4 text-black shadow-sm dark:bg-slate-300"
         >
           <div>
             <span className="pr-4 text-xl font-bold">{entry[0]}</span>
             <span className="pr-4 text-sm italic">{entry[1]} </span>
-            <Badge className="text-sm" variant="outline">
+            <Badge
+              className="text-sm text-black dark:border-gray-400"
+              variant="outline"
+            >
               {entry[2]}
             </Badge>
           </div>

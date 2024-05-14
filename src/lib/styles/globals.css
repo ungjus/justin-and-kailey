@@ -70,6 +70,10 @@
   * {
     @apply border-border;
   }
+  .wrapper {
+    @apply mx-auto p-6 sm:p-8;
+    max-width: 48rem;
+  }
   body {
     @apply bg-background text-foreground;
   }
