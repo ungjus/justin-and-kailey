@@ -17,7 +17,7 @@
     "up-latest": "pnpm up-interactive -L",
     "release": "standard-version",
     "push-release": "git push --follow-tags origin main",
-    "prepare": "husky install"
+    "prepare": "husky || true"
   },
   "dependencies": {
     "@fontsource/plus-jakarta-sans": "^5.0.20",
