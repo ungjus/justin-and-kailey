@@ -16,9 +16,9 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
   };
 
   return (
-    <div className="sticky top-[50px] z-10 w-full backdrop-blur-md dark:bg-blue-950/10">
-      <section className="wrapper mx-auto flex items-center justify-between py-2">
-        <div className="mx-auto w-full">
+    <div className="sticky top-[53px] z-10 w-full backdrop-blur-md dark:bg-blue-950/10">
+      <section className="flex items-center justify-between p-2">
+        <div className="flex w-full items-center">
           <input
             type="text"
             className="w-full rounded bg-slate-50 py-2 pl-2 text-black"
@@ -26,8 +26,8 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
             value={searchQuery}
             onChange={handleInputChange}
           />
+          <Search className="-ml-9 text-slate-500 opacity-50" />
         </div>
-        <Search className="-ml-9 shrink-0 text-slate-500 opacity-50" />
       </section>
     </div>
   );
