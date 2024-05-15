@@ -6,7 +6,7 @@ interface WordDisplayProps {
 
 const WordDisplay = ({ entries }: WordDisplayProps) => {
   return (
-    <div className="w-100">
+    <div className="w-full">
       {entries.map((entry) => (
         <div
           key={entry[0]}
