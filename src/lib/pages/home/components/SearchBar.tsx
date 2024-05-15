@@ -26,7 +26,7 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
             value={searchQuery}
             onChange={handleInputChange}
           />
-          <Search className="-ml-9 text-slate-500 opacity-50" />
+          <Search className="-ml-9 cursor-pointer text-slate-500 opacity-50" />
         </div>
       </section>
     </div>
