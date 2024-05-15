@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Menu } from 'lucide-react';
 
 import { ThemeToggle } from '@/lib/components/theme-toggle';

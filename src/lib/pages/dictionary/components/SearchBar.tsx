@@ -21,12 +21,12 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
         <div className="flex w-full items-center">
           <input
             type="text"
-            className="w-full rounded bg-slate-50 py-2 pl-2 text-black"
+            className="w-full rounded bg-slate-50 py-2 pl-2 text-black dark:bg-slate-900 dark:text-white"
             placeholder="Search"
             value={searchQuery}
             onChange={handleInputChange}
           />
-          <Search className="-ml-9 cursor-pointer text-slate-500 opacity-50" />
+          <Search className="-ml-9 cursor-pointer text-slate-500 opacity-50 dark:text-white" />
         </div>
       </section>
     </div>

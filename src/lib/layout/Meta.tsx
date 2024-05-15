@@ -1,15 +1,12 @@
 import { Helmet } from 'react-helmet';
 
-const APP_NAME = 'vite-react-tailwind-starter';
+const APP_NAME = 'Justin-&-Kailey';
 
 const Meta = () => {
   return (
     <Helmet>
-      <title>Shuckster&apos;s Dictionary</title>
-      <meta
-        name="description"
-        content="Doug's and Doug's complete vocabulary"
-      />
+      <title>Justin and Kailey</title>
+      <meta name="description" content="Everything about Justin and Kailey" />
 
       <meta name="application-name" content={APP_NAME} />
       <meta name="apple-mobile-web-app-capable" content="yes" />

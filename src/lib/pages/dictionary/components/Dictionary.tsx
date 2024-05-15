@@ -17,13 +17,13 @@ const WordDisplay = ({ entries }: WordDisplayProps) => {
           <DialogTrigger>
             <div
               key={entry[0]}
-              className="m-2 flex-shrink-0 rounded-lg border border-gray-300 bg-white p-4 text-left text-black shadow-sm dark:bg-slate-50"
+              className="m-2 flex-shrink-0 rounded-lg border border-gray-300 bg-white p-4 text-left text-black shadow-sm dark:border-gray-800 dark:bg-slate-900 dark:text-white"
             >
               <div>
                 <span className="pr-4 text-xl font-bold">{entry[0]}</span>
                 <span className="pr-4 text-sm italic">{entry[1]} </span>
                 <Badge
-                  className="text-sm text-black dark:border-gray-400"
+                  className="text-sm text-black dark:border-gray-400 dark:text-white"
                   variant="outline"
                 >
                   {entry[2]}
@@ -45,13 +45,13 @@ const WordDisplay = ({ entries }: WordDisplayProps) => {
           <DialogContent>
             <div
               key={entry[0]}
-              className="rounded-lg bg-white p-4 text-black shadow-sm dark:bg-slate-50"
+              className="rounded-lg bg-white p-4 text-black shadow-sm dark:bg-slate-900 dark:text-white"
             >
               <div>
                 <span className="pr-4 text-xl font-bold">{entry[0]}</span>
                 <span className="pr-4 text-sm italic">{entry[1]} </span>
                 <Badge
-                  className="text-sm text-black dark:border-gray-400"
+                  className="text-sm text-black dark:border-gray-400 dark:text-white"
                   variant="outline"
                 >
                   {entry[2]}
