@@ -16,7 +16,7 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
   };
 
   return (
-    <div className="sticky top-[53px] z-10 w-full backdrop-blur-md dark:bg-blue-950/10">
+    <div className="sticky top-12 z-10 w-full backdrop-blur-md dark:bg-blue-950/10">
       <section className="flex items-center justify-between p-2">
         <div className="flex w-full items-center">
           <input

@@ -13,10 +13,10 @@ import {
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-10 w-full border-b bg-amber-200 backdrop-blur-md dark:bg-blue-950">
+    <header className="sticky top-0 z-10 h-12 w-full border-b bg-amber-200 backdrop-blur-md dark:bg-blue-950">
       <section className="wrapper mx-auto flex items-center justify-between py-2">
         <div className="text-l font-semibold">
-          Justin & Kailey&apos;s 1st Anniversary
+          <a href="/">Justin & Kailey&apos;s 1st Anniversary</a>
         </div>
         <div className="ml-auto flex items-center gap-2">
           <DropdownMenu>

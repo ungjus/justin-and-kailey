@@ -39,12 +39,12 @@ const Dictionary = () => {
   };
 
   return (
-    <>
+    <div className="wrapper">
       <SearchBar onSearch={handleSearch} />
       <div className="flex min-h-[60vh] flex-col items-center justify-center">
         <WordDisplay entries={filteredEntries} />
       </div>
-    </>
+    </div>
   );
 };
 
