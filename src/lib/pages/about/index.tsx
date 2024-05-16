@@ -1,4 +1,9 @@
-/* eslint-disable sonarjs/no-duplicate-string */
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from '@/lib/components/ui/dialog';
+
 const images = [
   'https://utfs.io/f/73b60dc3-9028-4f28-b879-f8c05bb99d37-xq66pv.JPEG',
   'https://utfs.io/f/baea88db-c153-493d-b772-50bc13bdaebc-1xf5as.png',
@@ -32,7 +37,14 @@ const About = () => {
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {images.map((image) => (
-          <ImageCard key={image} src={image} />
+          <Dialog>
+            <DialogTrigger>
+              <ImageCard key={image} src={image} />
+            </DialogTrigger>
+            <DialogContent>
+              <ImageCard key={image} src={image} />
+            </DialogContent>
+          </Dialog>
         ))}
       </div>
     </div>
