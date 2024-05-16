@@ -8,5 +8,12 @@ module.exports = {
         allow: ['info', 'warn', 'error'],
       },
     ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   },
+  
 };

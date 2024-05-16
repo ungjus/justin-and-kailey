@@ -16,7 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Meta />
       <div className="flex min-h-screen flex-col bg-amber-100 dark:bg-blue-900 dark:text-white">
         <Header />
-        <main className="wrapper">{children}</main>
+        <main className="wrapper flex-1">{children}</main>
         <Footer />
       </div>
     </ThemeProvider>
