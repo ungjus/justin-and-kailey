@@ -75,7 +75,10 @@
     max-width: 48rem;
   }
   .date {
-    margin-right: 10px;
+    margin-right: 15px;
+  }
+  .vertical-timeline {
+    margin: 15px;
   }
   body {
     @apply bg-background text-foreground;
