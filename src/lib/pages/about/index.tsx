@@ -29,8 +29,8 @@ const About = () => {
       <br />
 
       <p>
-        After resolving the prining issue and getting their section copies, they
-        began walking home. Justin lived in Savannah appartments and Kailey
+        After resolving the printing issue and getting their section copies,
+        they began walking home. Justin lived in Savannah apartments and Kailey
         lived in Nordheim at the time. However, for some reason, Kailey was
         walking up the Ave as well. This was when Justin and Kailey first
         started talking with each other.
@@ -53,8 +53,8 @@ const About = () => {
       <p>
         Justin started playing Pikmin Bloom with Kailey and quickly became
         addicted. As they grew closer Justin asked for Kailey&apos;s phone
-        number since she rarely checked Instagram. On Feburary 15, 2023, Justin
-        and Kailey got dinner at Mee Sum and offically became besties there.
+        number since she rarely checked Instagram. On February 15, 2023, Justin
+        and Kailey got dinner at Mee Sum and officially became besties there.
         They grew closer and did things like watching anime, playing games,
         watching application videos, working on assignments, origami, and having
         late night discord calls. They got their first meal together at
@@ -68,8 +68,8 @@ const About = () => {
         towards Kailey. That day, Justin went over to Nordheim to play ping pong
         with Kailey before their leads meeting. It was after the leads meeting
         when Justin and Kailey stayed afterwards in the room where Justin
-        prepard to stay it. Kailey came back from bathroom, sat down, closed her
-        computer, and said &quot;Okay I&apos;m ready to leave&quot;. That is
+        prepared to stay it. Kailey came back from bathroom, sat down, closed
+        her computer, and said &quot;Okay I&apos;m ready to leave&quot;. That is
         when Justin said &quot;Wait I have something to tell you...&quot;.
         However, after the confession, Kailey had conflicted feelings and she
         needed time to think about it. But they were still besties.
@@ -90,7 +90,7 @@ const About = () => {
       <p>
         On June 6, 2023, Justin and Kailey hosted a review session in
         preparation for the Spring CSE 121 final. After the review session,
-        Justin suggsted playing some volleyball and encouraging our good friend
+        Justin suggested playing some volleyball and encouraging our good friend
         Jaden Tan before his interview to become a CSE 12X TA. Kailey took this
         as a perfect opportunity to say her response. So on June 7, 2023, Justin
         and Kailey briefly played some volleyball before realizing how bad they
@@ -112,7 +112,7 @@ const About = () => {
       <p>
         Justin and Kailey grew a lot this past year. As a couple, they grew
         closer. They found new hobbies, dealt with long distance, had their
-        first micro confict, and met each other&apos;s parents and families.
+        first micro conflict, and met each other&apos;s parents and families.
         They also grew professionally as they both started working. Primary
         provider and moneymaker Kailey works at Amazon in Seattle in March and
         Justin recently started working at Meta in Bellevue in May. However,
