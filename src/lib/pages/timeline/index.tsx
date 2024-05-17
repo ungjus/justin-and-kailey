@@ -79,6 +79,7 @@ const Timeline = () => {
 
   return (
     <div className="wrapper">
+      <h1 className="my-10 text-center text-4xl font-bold">The Timeline</h1>
       {Object.entries(eventsByYear).map(([year, events]) => (
         <div key={year}>
           <h1 className="my-10 text-center text-3xl font-bold">{year}</h1>

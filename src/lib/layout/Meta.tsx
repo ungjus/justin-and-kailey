@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-const APP_NAME = 'Justin-&-Kailey';
+const APP_NAME = 'Justin-and-Kailey';
 
 const Meta = () => {
   return (
@@ -14,9 +14,18 @@ const Meta = () => {
       <meta name="apple-mobile-web-app-title" content={APP_NAME} />
       <meta name="format-detection" content="telephone=no" />
       <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="theme-color" content="#FFFFFF" />
+      <meta
+        name="theme-color"
+        media="(prefers-color-scheme: light)"
+        content="#FEF3C7F"
+      />
+      <meta
+        name="theme-color"
+        media="(prefers-color-scheme: dark)"
+        content="#0F172AF"
+      />
 
-      <link rel="shortcut icon" href="/assets/favicon.svg" />
+      <link rel="shortcut icon" href="/assets/heart-flat-icon.svg" />
     </Helmet>
   );
 };

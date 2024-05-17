@@ -30,17 +30,28 @@ pnpm dev
 
 ## TODO
 
-- [ ] Create txt with data
-- [ ] Read from txt onto site
-- [ ] Header
-- [ ] Footer
-- [ ] Side bar (collaspable)
-- [ ] Search
-- [ ] Volumne option (Shadui select)
-- [ ] prettify dictionary
-- [ ] Hamburger menu to header
+- [x] Create txt with data
+- [x] Read from txt onto site
+- [x] Header
+- [x] Footer
+- [x] Search
+- [x] prettify dictionary
+- [x] Hamburger menu to header
+- [x] read timeline txt
+- [x] pretify timeline
+- [x] home page
+- [ ] page carousel on home
 - [ ] About us page
-- [ ] Random popups
+- [ ] import images for timeline
+
+## Bugs
+- [ ] Dictionary words resize on search
+- [ ] have to press enter to serach instead of auto
+- [ ] darkmode doesn't switch on timeline unless refresh
+- [ ] pngs take too long to load, should use jpgs
+- [ ] html background is white instead of body color
+
+
 
 ## References
 

@@ -29,11 +29,11 @@ const Header = () => {
               <a href="/">
                 <DropdownMenuItem>Home</DropdownMenuItem>
               </a>
-              <a href="/dictionary">
-                <DropdownMenuItem>Dictionary</DropdownMenuItem>
-              </a>
               <a href="/timeline">
                 <DropdownMenuItem>Timeline</DropdownMenuItem>
+              </a>
+              <a href="/dictionary">
+                <DropdownMenuItem>Dictionary</DropdownMenuItem>
               </a>
               <a href="/about">
                 <DropdownMenuItem>About Us</DropdownMenuItem>

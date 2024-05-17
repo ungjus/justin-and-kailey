@@ -20,7 +20,6 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
       <section className="flex items-center justify-between p-2">
         <div className="flex w-full items-center">
           <input
-            type="text"
             className="w-full rounded bg-slate-50 py-2 pl-2 text-black dark:bg-slate-900 dark:text-white"
             placeholder="Search"
             value={searchQuery}

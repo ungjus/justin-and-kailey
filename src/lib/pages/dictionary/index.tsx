@@ -40,6 +40,9 @@ const Dictionary = () => {
 
   return (
     <div className="wrapper">
+      <h1 className="my-10 text-center text-4xl font-bold">
+        Shuckster&apos;s Dictionary
+      </h1>
       <SearchBar onSearch={handleSearch} />
       <div className="flex min-h-[60vh] flex-col items-center justify-center">
         <WordDisplay entries={filteredEntries} />
