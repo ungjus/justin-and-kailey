@@ -7,9 +7,19 @@ import { Chrono } from 'react-chrono';
 import { useTheme } from '@/lib/components/theme-provider';
 import 'react-vertical-timeline-component/style.min.css';
 
+interface MediaUrl {
+  url: string;
+}
+
+interface Media {
+  source: MediaUrl;
+  type: string;
+}
+
 interface Event {
   title: string;
   cardTitle: string;
+  media?: Media;
 }
 
 interface EventsByYear {
@@ -39,8 +49,15 @@ const Timeline = () => {
         currentYear = trimmedLine;
         events[currentYear] = [];
       } else if (currentYear) {
-        const [title, cardTitle] = trimmedLine.split(' - ');
-        events[currentYear].push({ title, cardTitle });
+        const parts = trimmedLine.split(' - ');
+        const title = parts[0];
+        const cardTitle = parts[1] || '';
+        const mediaUrl = parts[2] ? parts[2].trim() : undefined;
+        const event: Event = { title, cardTitle };
+        if (mediaUrl) {
+          event.media = { source: { url: mediaUrl }, type: 'IMAGE' };
+        }
+        events[currentYear].push(event);
       }
     });
 
@@ -83,31 +100,17 @@ const Timeline = () => {
       {Object.entries(eventsByYear).map(([year, events]) => (
         <div key={year}>
           <h1 className="my-10 text-center text-3xl font-bold">{year}</h1>
-          <Chrono
-            items={events}
-            mode="VERTICAL"
-            cardHeight="50"
-            disableToolbar="True"
-            theme={
-              theme === 'dark'
-                ? {
-                    primary: 'black',
-                    secondary: 'rgb(23, 37, 84)',
-                    cardBgColor: 'rgb(17, 24, 39)',
-                    cardTitleColor: 'white',
-                    titleColor: 'white',
-                    titleColorActive: 'white',
-                  }
-                : {
-                    primary: 'black',
-                    secondary: 'rgb(253, 230, 138)',
-                    cardBgColor: 'rgb(255, 255, 255)',
-                    cardTitleColor: 'black',
-                    titleColor: 'black',
-                    titleColorActive: 'black',
-                  }
-            }
-          />
+          <div>
+            <Chrono
+              items={events}
+              mode="VERTICAL"
+              cardHeight="20"
+              disableToolbar="True"
+              theme={chronoTheme}
+              mediaHeight="400"
+              textDensity="LOW"
+            />
+          </div>
         </div>
       ))}
     </div>

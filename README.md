@@ -40,22 +40,24 @@ pnpm dev
 - [x] read timeline txt
 - [x] pretify timeline
 - [x] home page
-- [ ] page carousel on home
-- [ ] About us page
-- [ ] import images for timeline
+- [x] page carousel on home
+- [x] About us page
+- [x] import images for timeline
 
 ## Bugs
+
 - [ ] Dictionary words resize on search
 - [ ] have to press enter to serach instead of auto
 - [ ] darkmode doesn't switch on timeline unless refresh
 - [ ] pngs take too long to load, should use jpgs
 - [ ] html background is white instead of body color
+- [ ] fix sizes
 
 
 
 ## References
 
 - [vite](https://vitejs.dev)
-  - [avoid manual import](https://vitejs.dev/guide/features.html#jsx)
+- [avoid manual import](https://vitejs.dev/guide/features.html#jsx)
 - [TailwindCSS](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org)
