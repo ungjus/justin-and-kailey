@@ -49,9 +49,9 @@ pnpm dev
 - [ ] Dictionary words resize on search
 - [ ] have to press enter to serach instead of auto
 - [ ] darkmode doesn't switch on timeline unless refresh
-- [ ] pngs take too long to load, should use jpgs
+- [x] pngs take too long to load, should use jpgs
 - [ ] html background is white instead of body color
-- [ ] fix sizes
+- [ ] fix sizes of images on timeline to be square
 
 
 

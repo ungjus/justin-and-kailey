@@ -39,7 +39,12 @@ const pages: {
     title: 'About Us',
     href: '/about',
     description: 'Learn a little about Justin and Kailey!',
-    image: <UserRound />,
+    image: (
+      <span className="flex items-center">
+        <UserRound />
+        <UserRound />
+      </span>
+    ),
   },
 ];
 
@@ -64,9 +69,10 @@ const HomeCarousel = () => {
               <CardContent className="flex aspect-square flex-col items-center justify-center p-6 text-center">
                 <CardHeader>
                   <CardTitle>
-                    Justin & Kailey&apos;s First Anniversary! 🎉
+                    Justin & Kailey&apos;s First Anniversary!
                   </CardTitle>
                 </CardHeader>
+                <CardContent className="text-3xl">🎉</CardContent>
               </CardContent>
             </Card>
           </CarouselItem>

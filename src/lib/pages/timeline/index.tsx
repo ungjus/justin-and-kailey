@@ -1,10 +1,8 @@
-/* eslint-disable no-console */
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable sonarjs/no-duplicate-string */
 import { useEffect, useState } from 'react';
 import { Chrono } from 'react-chrono';
 
 import { useTheme } from '@/lib/components/theme-provider';
+
 import 'react-vertical-timeline-component/style.min.css';
 
 interface MediaUrl {
@@ -80,8 +78,6 @@ const Timeline = () => {
   }, []);
 
   useEffect(() => {
-    console.log('theme changed', theme);
-
     setChronoTheme((prevTheme) => ({
       ...prevTheme,
       secondary: theme === 'dark' ? 'rgb(23, 37, 84)' : 'rgb(253, 230, 138)',
@@ -91,8 +87,6 @@ const Timeline = () => {
       titleColorActive: theme === 'dark' ? 'white' : 'black',
     }));
   }, [theme]);
-
-  console.log('Chrono theme:', chronoTheme);
 
   return (
     <div className="wrapper">
