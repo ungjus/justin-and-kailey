@@ -130,7 +130,7 @@ const About = () => {
       </p>
 
       <img
-        src="/images/redbean.png"
+        src="images/redbean2.png"
         alt="Us as red beans"
         className="item-center mx-auto flex size-2/3 justify-center"
       />
