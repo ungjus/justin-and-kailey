@@ -22,7 +22,7 @@ const Banner = () => {
         <span className="block">
           I wanted to make you something special so decided to make a website!
         </span>
-        <span className="block">Take a Look around and enjoy :)</span>
+        <span className="block">Take a look around and enjoy :)</span>
       </div>
       <X
         onClick={handleClose}
